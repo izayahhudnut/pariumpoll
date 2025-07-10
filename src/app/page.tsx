@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 bg-gradient-to-br from-blue-50 to-indigo-100 pt-safe-top">
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 bg-white pt-safe-top">
       <div className="w-full max-w-md space-y-4 sm:space-y-8 pb-16 sm:pb-8">
         <div className="text-center space-y-4 sm:space-y-6">
           <Image
