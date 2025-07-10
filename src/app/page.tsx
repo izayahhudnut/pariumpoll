@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div className="w-full max-w-md space-y-6 sm:space-y-8">
+      <div className="w-full max-w-md space-y-4 sm:space-y-8">
         <div className="text-center space-y-4 sm:space-y-6">
           <Image
             src="/Black_Logo.png"

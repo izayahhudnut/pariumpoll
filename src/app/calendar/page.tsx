@@ -126,7 +126,7 @@ export default function CalendarPage() {
         />
       )}
       
-      <div className="w-full max-w-2xl space-y-6 sm:space-y-8 py-4 sm:py-8">
+      <div className="w-full max-w-2xl space-y-4 sm:space-y-8 py-2 sm:py-8">
         <div className="text-center space-y-4 sm:space-y-6">
           <Image
             src="/Black_Logo.png"
