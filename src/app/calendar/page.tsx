@@ -20,6 +20,7 @@ export default function CalendarPage() {
   const [userName, setUserName] = useState("");
   const [showConfetti, setShowConfetti] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showConfirmDialog, setShowConfirmDialog] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -60,7 +61,7 @@ export default function CalendarPage() {
     setDateRanges(prev => prev.filter((_, i) => i !== index));
   };
 
-  const handleSubmit = async () => {
+  const handleDoneClick = () => {
     if (dateRanges.length === 0) {
       toast.error("Please select at least one date range");
       return;
@@ -71,6 +72,11 @@ export default function CalendarPage() {
       return;
     }
 
+    setShowConfirmDialog(true);
+  };
+
+  const handleConfirmSubmit = async () => {
+    setShowConfirmDialog(false);
     setIsSubmitting(true);
     
     try {
@@ -230,7 +236,7 @@ export default function CalendarPage() {
             </Button>
           )}
           <Button
-            onClick={handleSubmit}
+            onClick={handleDoneClick}
             disabled={dateRanges.length === 0 || isSubmitting}
             className="flex-1 h-12 text-base"
           >
@@ -238,6 +244,36 @@ export default function CalendarPage() {
           </Button>
         </div>
       </div>
+      
+      {/* Confirmation Dialog */}
+      {showConfirmDialog && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-lg p-6 max-w-md w-full space-y-4">
+            <h3 className="text-lg font-semibold text-gray-900">
+              Before you submit...
+            </h3>
+            <p className="text-gray-600">
+              Have you selected all the date ranges when you&apos;re available for the retreat? 
+              You can always add more ranges before submitting.
+            </p>
+            <div className="flex gap-3">
+              <Button
+                onClick={() => setShowConfirmDialog(false)}
+                variant="outline"
+                className="flex-1"
+              >
+                Not yet
+              </Button>
+              <Button
+                onClick={handleConfirmSubmit}
+                className="flex-1"
+              >
+                Yes, submit
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
       
       {/* AI Inner Dialogue Marquee */}
       <div className="fixed bottom-0 left-0 right-0 bg-gray-900 text-white py-2 overflow-hidden">
