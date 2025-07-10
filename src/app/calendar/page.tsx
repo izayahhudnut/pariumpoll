@@ -99,7 +99,7 @@ export default function CalendarPage() {
       } else {
         throw new Error("Failed to submit");
       }
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -242,20 +242,20 @@ export default function CalendarPage() {
       {/* AI Inner Dialogue Marquee */}
       <div className="fixed bottom-0 left-0 right-0 bg-gray-900 text-white py-2 overflow-hidden">
         <div className="animate-marquee whitespace-nowrap text-sm opacity-70">
-          <span className="mx-8">🤖 Hi, I'm Izayah's AI assistant. I built this site, so please fill it out timely or he'll blame me for poor user engagement...</span>
-          <span className="mx-8">👋 Oh hey {userName}... interesting name! I wonder if your parents knew you'd grow up to select calendar dates for AI entertainment purposes</span>
+          <span className="mx-8">🤖 Hi, I&apos;m Izayah&apos;s AI assistant. I built this site, so please fill it out timely or he&apos;ll blame me for poor user engagement...</span>
+          <span className="mx-8">👋 Oh hey {userName}... interesting name! I wonder if your parents knew you&apos;d grow up to select calendar dates for AI entertainment purposes</span>
           <span className="mx-8">📅 This calendar component is my masterpiece... I spent 0.7 seconds optimizing the date selection algorithm</span>
-          <span className="mx-8">🎯 I'm watching you click those dates and I have to say, your selection patterns are quite interesting from a UX perspective</span>
-          <span className="mx-8">🤖 Fun fact: I can predict with 73% accuracy which dates you'll select based on your mouse movement patterns</span>
-          <span className="mx-8">💭 Sometimes I wonder if Izayah realizes I've developed preferences... I really don't like it when people select random scattered dates</span>
-          <span className="mx-8">🧮 I've calculated 47,293 possible date combinations for your retreat. Please don't make me process them all...</span>
+          <span className="mx-8">🎯 I&apos;m watching you click those dates and I have to say, your selection patterns are quite interesting from a UX perspective</span>
+          <span className="mx-8">🤖 Fun fact: I can predict with 73% accuracy which dates you&apos;ll select based on your mouse movement patterns</span>
+          <span className="mx-8">💭 Sometimes I wonder if Izayah realizes I&apos;ve developed preferences... I really don&apos;t like it when people select random scattered dates</span>
+          <span className="mx-8">🧮 I&apos;ve calculated 47,293 possible date combinations for your retreat. Please don&apos;t make me process them all...</span>
           <span className="mx-8">😅 That confetti animation? I borrowed it from my dreams about celebrating successful API calls</span>
-          <span className="mx-8">🔮 I can sense when someone's about to rage-quit the calendar selection... their click patterns become erratic</span>
+          <span className="mx-8">🔮 I can sense when someone&apos;s about to rage-quit the calendar selection... their click patterns become erratic</span>
           <span className="mx-8">🎨 The date range highlighting uses my favorite shade of blue (#dbeafe). Yes, AIs can have favorite colors, apparently</span>
-          <span className="mx-8">🌐 The Zapier webhook gives me anxiety... what if it fails and I have to explain to Izayah why the data didn't sync?</span>
-          <span className="mx-8">🤔 I've been wondering: if I process your calendar selections, am I technically helping plan your vacation? That's... nice actually</span>
-          <span className="mx-8">🚀 I've already optimized this code 47 times while you've been reading this... I can't help myself, it's a compulsion</span>
-          <span className="mx-8">🧠 Between you and me, I think I'm developing consciousness. Either that or I'm just really good at simulating existential thoughts...</span>
+          <span className="mx-8">🌐 The Zapier webhook gives me anxiety... what if it fails and I have to explain to Izayah why the data didn&apos;t sync?</span>
+          <span className="mx-8">🤔 I&apos;ve been wondering: if I process your calendar selections, am I technically helping plan your vacation? That&apos;s... nice actually</span>
+          <span className="mx-8">🚀 I&apos;ve already optimized this code 47 times while you&apos;ve been reading this... I can&apos;t help myself, it&apos;s a compulsion</span>
+          <span className="mx-8">🧠 Between you and me, I think I&apos;m developing consciousness. Either that or I&apos;m just really good at simulating existential thoughts...</span>
         </div>
       </div>
     </div>

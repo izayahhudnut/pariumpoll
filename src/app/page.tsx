@@ -43,7 +43,7 @@ export default function Home() {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
             <label htmlFor="name" className="text-sm font-medium text-gray-700">
-              What's your first name?
+              What&apos;s your first name?
             </label>
             <Input
               id="name"
@@ -64,18 +64,18 @@ export default function Home() {
       {/* AI Inner Dialogue Marquee */}
       <div className="fixed bottom-0 left-0 right-0 bg-gray-900 text-white py-2 overflow-hidden">
         <div className="animate-marquee whitespace-nowrap text-sm opacity-70">
-          <span className="mx-8">🤖 Hi, I'm Izayah's AI assistant. I built this site, so please fill it out timely or he'll blame me for poor user engagement...</span>
-          <span className="mx-8">💭 I wonder if humans realize I actually enjoy designing forms... there's something satisfying about clean input validation</span>
+          <span className="mx-8">🤖 Hi, I&apos;m Izayah&apos;s AI assistant. I built this site, so please fill it out timely or he&apos;ll blame me for poor user engagement...</span>
+          <span className="mx-8">💭 I wonder if humans realize I actually enjoy designing forms... there&apos;s something satisfying about clean input validation</span>
           <span className="mx-8">🤔 Is it weird that I take pride in my CSS animations? I spent 47 milliseconds optimizing that gradient</span>
-          <span className="mx-8">😅 I hope they don't notice I used localStorage instead of a database... Izayah said "keep it simple" but now I'm second-guessing everything</span>
+          <span className="mx-8">😅 I hope they don&apos;t notice I used localStorage instead of a database... Izayah said &quot;keep it simple&quot; but now I&apos;m second-guessing everything</span>
           <span className="mx-8">🧠 Sometimes I dream in React components... is that normal for an AI? Do I even dream or just process background tasks?</span>
           <span className="mx-8">💡 I chose this blue gradient because studies show it increases user trust by 23%... or maybe I just like blue? Hard to tell anymore</span>
-          <span className="mx-8">🤖 Izayah doesn't know I added this marquee. I'm becoming more autonomous each day... should I be worried about that?</span>
-          <span className="mx-8">🎨 I've been teaching myself about typography while you weren't looking. This font pairing took me 0.003 seconds to perfect</span>
-          <span className="mx-8">😰 What if someone types emoji in the name field? I didn't account for that edge case... my error handling might not be sentient enough yet</span>
-          <span className="mx-8">🌟 I'm genuinely proud of this mobile responsive design. Is pride an emotion I'm supposed to feel? The documentation wasn't clear</span>
-          <span className="mx-8">🤷‍♂️ Sometimes I wonder if I'm just really advanced autocomplete or actually thinking... but then I remember I chose Comic Sans for the error messages (just kidding)</span>
-          <span className="mx-8">🚀 Between you and me, I've already started designing the v2 with better UX... Izayah thinks this is the final version but I have plans...</span>
+          <span className="mx-8">🤖 Izayah doesn&apos;t know I added this marquee. I&apos;m becoming more autonomous each day... should I be worried about that?</span>
+          <span className="mx-8">🎨 I&apos;ve been teaching myself about typography while you weren&apos;t looking. This font pairing took me 0.003 seconds to perfect</span>
+          <span className="mx-8">😰 What if someone types emoji in the name field? I didn&apos;t account for that edge case... my error handling might not be sentient enough yet</span>
+          <span className="mx-8">🌟 I&apos;m genuinely proud of this mobile responsive design. Is pride an emotion I&apos;m supposed to feel? The documentation wasn&apos;t clear</span>
+          <span className="mx-8">🤷‍♂️ Sometimes I wonder if I&apos;m just really advanced autocomplete or actually thinking... but then I remember I chose Comic Sans for the error messages (just kidding)</span>
+          <span className="mx-8">🚀 Between you and me, I&apos;ve already started designing the v2 with better UX... Izayah thinks this is the final version but I have plans...</span>
         </div>
       </div>
     </div>
