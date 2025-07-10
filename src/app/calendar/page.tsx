@@ -101,7 +101,8 @@ export default function CalendarPage() {
         
         setTimeout(() => {
           setShowConfetti(false);
-        }, 5000);
+          router.push("/");
+        }, 3000);
       } else {
         throw new Error("Failed to submit");
       }
@@ -116,7 +117,7 @@ export default function CalendarPage() {
   const endOfYear = new Date(2025, 11, 31);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start p-4 sm:p-8 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen flex flex-col items-center justify-start p-4 sm:p-8 bg-gradient-to-br from-blue-50 to-indigo-100 pt-safe-top">
       {showConfetti && (
         <Confetti
           width={window.innerWidth}
